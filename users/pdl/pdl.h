@@ -3,6 +3,17 @@
 
 #include "quantum.h"
 
+enum userspace_layer_codes {
+  QWERTY = SAFE_RANGE,
+  PROXIM,
+  NUMBRS,
+  NAVIGN,
+  PUNCTN,
+  CODING,
+  FUNCTN,
+  NEW_SAFE_RANGE
+};
+
 #define _QWERTY 0
 #define _PROXIM 2
 #define _NUMBRS 4
