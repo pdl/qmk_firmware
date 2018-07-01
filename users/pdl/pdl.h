@@ -6,11 +6,8 @@
 enum userspace_layer_codes {
   QWERTY = SAFE_RANGE,
   PROXIM,
-  NUMBRS,
-  NAVIGN,
   PUNCTN,
   CODING,
-  FUNCTN,
   NEW_SAFE_RANGE
 };
 
@@ -49,6 +46,10 @@ enum userspace_layer_codes {
 #define MY_CF5  LCTL(KC_F5)
 #define MY_CAD  LCTL(LALT(KC_DEL))
 
+#define NUMBRS MO(_NUMBRS)
+#define NAVIGN MO(_NAVIGN)
+#define FUNCTN MO(_FUNCTN)
+
 #define EITHER_SHIFT (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT))
 
 // Taken from drashna:
@@ -80,7 +81,7 @@ enum userspace_layer_codes {
 #define _________________PROXIM_R3_________________  KC_M,    KC_H,    KC_COMM, KC_DOT,  KC_SLASH
 
 #define _________________PUNCTN_R1_________________  KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, _______
-#define _________________PUNCTN_R2_________________  KC_ASTR, MY_SEQL, MY_CMIN, KC_PLUS, MY_ASLS
+#define _________________PUNCTN_R2_________________  KC_ASTR, KC_EQL,  KC_MINS, KC_PLUS, KC_SLSH
 #define _________________PUNCTN_R3_________________  KC_LCBR, KC_RCBR, _______, _______, _______
 
 #define _________________CODING_R1_________________  KC_GRV,  KC_PERC, KC_DLR,  KC_AT,   _______
