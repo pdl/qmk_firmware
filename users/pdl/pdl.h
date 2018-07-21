@@ -11,8 +11,8 @@ enum userspace_layer_codes {
   NEW_SAFE_RANGE
 };
 
-#define _QWERTY 0
-#define _PROXIM 2
+#define _QWERTY 2
+#define _PROXIM 0
 #define _NUMBRS 4
 #define _NAVIGN 5
 #define _PUNCTN 6
