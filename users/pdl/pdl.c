@@ -61,14 +61,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       break;
     case QWERTY:
-      return unshifted(KC_Q, record);
       if (record->event.pressed) {
         set_single_persistent_default_layer(_QWERTY);
       }
       return false;
       break;
     case PROXIM:
-      return unshifted(KC_P, record);
       if (record->event.pressed) {
         set_single_persistent_default_layer(_PROXIM);
       }
