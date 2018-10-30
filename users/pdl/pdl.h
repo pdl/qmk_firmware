@@ -50,11 +50,13 @@ enum userspace_layer_codes {
 #define MY_CF5  LCTL(KC_F5)
 #define MY_CAD  LCTL(LALT(KC_DEL))
 
-#define NUMBRS MO(_NUMBRS)
-#define NAVIGN MO(_NAVIGN)
-#define FUNCTN MO(_FUNCTN)
+#define NUMBRS TT(_NUMBRS)
+#define NAVIGN TT(_NAVIGN)
+#define FUNCTN TT(_FUNCTN)
 
 #define EITHER_SHIFT (MOD_BIT(KC_LSFT) | MOD_BIT(KC_RSFT))
+
+#define TAPPING_TOGGLE 2
 
 // Taken from drashna:
 // Since our quirky block definitions are basically a list of comma separated

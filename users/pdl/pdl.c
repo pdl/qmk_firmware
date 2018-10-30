@@ -54,6 +54,12 @@ uint32_t layer_state_set_user(uint32_t state) {
 __attribute__ ((weak))
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
+    case QK_LAYER_TAP_TOGGLE ... QK_LAYER_TAP_TOGGLE_MAX:
+      if (record->event.pressed) {
+        // ensure that the toggled layer is switched off by a single tap
+        layer_off(keycode & 0xFF);
+      }
+      break;
     case QWERTY:
       return unshifted(KC_Q, record);
       if (record->event.pressed) {
